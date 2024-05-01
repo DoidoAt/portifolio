@@ -149,14 +149,10 @@ body {
 }
 
 .projetos .projeto {
-    max-width: 260px;
+    max-width: 400px;
     max-height: 500px;
     position: relative;
     display: none;
-}
-
-.projetos .projeto.largo {
-    max-width: 500px;
 }
 
 .projetos .projeto.ativo {
@@ -241,6 +237,7 @@ body {
 
 .certificados .container-certificados {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     justify-content: center;
 }
@@ -248,6 +245,11 @@ body {
 .certificados .certificado {
     margin: 20px;
     position: relative;
+    display: none;
+}
+
+.certificados .certificado.ativo {
+    display: block;
 }
 
 .certificados .certificado embed{
@@ -276,6 +278,34 @@ body {
 .certificados .container-certificados .certificado:hover h3 {
     opacity: 0.8;
     background-color: #000;
+}
+
+.certificados .btn-mostrar-certificados {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.certificados .btn-mostrar-certificados:hover {
+    background-color: #9443d8;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.certificados .btn-mostrar-certificados.remover {
+    display: none;
 }
 
 @keyframes gradient-animation {
