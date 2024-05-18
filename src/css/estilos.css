@@ -240,10 +240,10 @@ body {
     flex-wrap: wrap;
     margin-bottom: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
 .certificados .certificado {
-    margin: 20px;
     position: relative;
     display: none;
     max-width: 400px;
