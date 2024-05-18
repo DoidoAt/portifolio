@@ -35,7 +35,6 @@ btnMostrarCertificados.addEventListener('click', () => {
     const certificadosAtivos = document.querySelectorAll('.certificado.ativo');
     const qtdInativo = certificadosInativos.length;
     var totalAtivo = certificadosAtivos.length;
-    console.log(qtdInativo, totalAtivo);
 
     var esconder = mostrarMaiscertificados(qtdInativo, totalAtivo, certificadosInativos);
 

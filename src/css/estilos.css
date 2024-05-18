@@ -246,28 +246,29 @@ body {
     margin: 20px;
     position: relative;
     display: none;
+    max-width: 400px;
+    max-height: 500px;
 }
 
 .certificados .certificado.ativo {
     display: block;
 }
 
-.certificados .certificado embed{
-    height: 400px;
-    width: 500px;
+.certificados .certificado img{
+    height: 100%;
 }
 
-.certificados .certificado h3 {
+.certificados .certificado .informacoes-certificado {
     background-color: #040203;
     width: 100%;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    height: 100%;
+    padding: 20px;
     position: absolute;
     bottom: 0;
     opacity: 0;
     transition: 0.3s;
 }
+
 
 .certificados .container-certificados .certificado:hover {
     transform: scale(1.1);
@@ -275,7 +276,7 @@ body {
     background-color: #201d1d;
 }
 
-.certificados .container-certificados .certificado:hover h3 {
+.certificados .container-certificados .certificado .informacoes-certificado:hover {
     opacity: 0.8;
     background-color: #000;
 }

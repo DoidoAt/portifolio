@@ -1,13 +1,22 @@
 @media(max-width: 1280px) {
     .cabecalho {
-        padding: 30px;
+        padding: 15px;
+    }
+
+    .cabecalho .menu li a {
+        color: #b87801;
+        font-size: 15px;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.2s;
     }
     
     .home{
         flex-direction: column;
         align-items: center;
-        margin: 50px 0;
-        gap: 30px;
+        margin: 25px 0;
+        gap: 15px;
     }
 
     .home .informacoes {
@@ -17,13 +26,24 @@
     }
 
     .projetos .container-projetos {
-        padding: 0 30px;
+        padding: 0 15px;
     }
+    
 }
 
 @media(max-width: 425px){
+
+    .cabecalho .menu li a {
+        color: #b87801;
+        font-size: 15px;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.2s;
+    }
+
     .home .informacoes h1{
-        font-size: 30px;
+        font-size: 16px;
     }
 
     .home .informacoes p{
@@ -35,7 +55,11 @@
     }
 
     .projetos {
-        padding: 30px;
+        padding: 15px;
+    }
+
+    .certificados {
+        padding: 15px;
     }
 }
 
