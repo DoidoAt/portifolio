@@ -26,50 +26,76 @@
 <body>
     <header class="cabecalho">
         <a href="">
-            <h1 class="logo">JVRG</h1>
+            <span class="logo" title="José Vitor Reggiani Galbardi">JVRG</span>
         </a>
 
         <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#certificados">Certificados</a>
-                </li>
+
+            <ul class="menu-links">
+                <li><a href="#experiencia" data-i18n="cabecaolho.experiencia">Experiência</a></li>
+                <li><a href="#projetos" data-i18n="cabecaolho.projetos">Projetos</a></li>
+                <li><a href="#tecnologias" data-i18n="cabecaolho.tecnologias">Tecnologias</a></li>
+                <li><a href="#certificados" data-i18n="cabecaolho.certificados">Certificados</a></li>
             </ul>
+
+            <button class="btn btn-lang" data-i18n="btn.lang">PT / EN</button>
+
         </nav>
     </header>
 
     <section class="home">
         <div class="informacoes">
-            <h1>Olá! Sou José Vitor Reggiani Galbardi</h1>
-            <p>Um cientista da computação apaixonado por tecnologia.</p>
-            <p>Estou sempre buscando me desafiar com novos projetos, com feedback
-                da comunidade de programação, além de compartilhar meu conhecimento. 😁
+            <h1 data-i18n="home.title">Engenheiro Backend | ERP, Integrações e Sistemas Financeiros</h1>
+
+            <p data-i18n="home.p1">
+                Bacharel em Ciência da Computação pela UEM, atuo como engenheiro backend em sistemas ERP,
+                com foco em integrações entre sistemas corporativos, marketplaces e instituições financeiras.
             </p>
-            <p>Também sou fã de jogos, filmes, séries, animes e meus gatitos. 💕</p>
+
+            <p data-i18n="home.p2">
+                Experiência em ambientes de alta criticidade, automatizando fluxos de vendas, logística e
+                conciliação financeira em produção.
+            </p>
+
+            <ul>
+                <li data-i18n="home.li1">✔ Desenvolvimento e evolução de sistemas ERP em produção</li>
+                <li data-i18n="home.li2">✔ Integração com APIs de marketplaces e bancos</li>
+                <li data-i18n="home.li3">✔ Modelagem e otimização de dados com PostgreSQL</li>
+                <li data-i18n="home.li4">✔ Garantia de consistência em fluxos transacionais críticos</li>
+            </ul>
+
+            <p data-i18n="home.p3">
+                Foco em engenharia de software aplicada a sistemas reais, priorizando confiabilidade,
+                integridade de dados e regras de negócio complexas.
+            </p>
+            <p data-i18n="home.p4">Também sou fã de jogos, filmes, séries e meus gatitos 💕</p>
+
+            <div class="contato-direto">
+                <a href="mailto:jvgalbardi@gmail.com" class="btn btn-primary" data-i18n="contact.email">
+                    Falar por e-mail
+                </a>
+
+                <a href="https://wa.me/43999229040" class="btn btn-secondary" target="_blank" data-i18n="contact.whatsapp">
+                    Falar no WhatsApp
+                </a>
+            </div>
+
             <ul class="redes-sociais">
                 <li>
-                    <a href="https://www.linkedin.com/in/josevitorrgalbardi" title="Ir para o LinkedIn" target="_blank">
+                    <a href="https://www.linkedin.com/in/josevitorrgalbardi" title="LinkedIn" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/DoidoAt" title="Ir para o GitHub" target="_blank">
+                    <a href="https://github.com/DoidoAt" title="GitHub" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://wa.me/43999229040" title="Enviar mensagem no WhatsApp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
+                    <a href="https://www.dio.me/users/jvgalbardi" title="DIO" target="_blank">
+                        <i class="fas fa-laptop"></i>
                     </a>
                 </li>
-
-                <li>
-                    <a href="https://www.dio.me/users/jvgalbardi" title="Ir para o DIO" target="_blank">
-                        <i class="fa fa-laptop"></i>
-                    </a>
-                </li>
-
             </ul>
         </div>
 
@@ -80,63 +106,186 @@
         </div>
     </section>
 
-    <section class="projetos" id="projetos">
-        <h2 class="titulo">Meus Projetos</h2>
+    <section class="experiencia" id="experiencia">
+        <h2 class="titulo" data-i18n="exp.title">Experiência Profissional</h2>
 
-        <div class="container-projetos">
-            <div class="projeto ativo">
-                <a href="https://github.com/DoidoAt/spotifyalura" target="_blank">
-                    <img src="./src/images/teste2.png" alt="foto projeto Spotfy">
-                    <h3>Projeto Spotfy</h3>
+        <div class="case-card">
 
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
+            <div class="case-header">
+                <h3 data-i18n="exp.h1">ERP & Integrações Corporativas</h3>
+                <span class="case-role" data-i18n="exp.span1">Backend Developer • Accion Sistemas</span>
+                <span class="case-date" data-i18n="exp.span2">Ago 2024 – Atual</span>
             </div>
 
-            <div class="projeto ativo">
-                <a href="https://github.com/DoidoAt/dragonballproject" target="_blank">
-                    <img src="./src/images/projeto-dbz.png" alt="foto projeto Dragon Ball">
-                    <h3>Projeto Dragon Ball</h3>
+            <p class="case-summary" data-i18n="exp.p1">
+                Engenharia de integrações para um ERP em produção, conectando sistemas críticos de vendas,
+                logística e financeiro com marketplaces e instituições bancárias.
+            </p>
 
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>            
+            <div class="case-grid">
 
-            <div class="projeto ativo">
-                <a href="https://github.com/DoidoAt/sword_knight" target="_blank">
-                    <img src="./src/images/sword_knight.png" alt="foto projeto Sword Knight">
-                    <h3>Projeto Sword Knight</h3>
+                <div class="case-block">
+                    <h4 data-i18n="exp.h2">⚙️ Problema</h4>
+                    <ul>
+                        <li data-i18n="exp.li1">Processos manuais em operações críticas</li>
+                        <li data-i18n="exp.li2">Inconsistência entre ERP e sistemas externos</li>
+                        <li data-i18n="exp.li3">Falta de automação em fluxos financeiros e fiscais</li>
+                    </ul>
+                </div>
 
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando Godot</p>
-                        <p>🔗 Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>     
-            
+                <div class="case-block">
+                    <h4 data-i18n="exp.h3">🔗 Solução</h4>
+                    <ul>
+                        <li data-i18n="exp.li4">Integração com Mercado Livre via API</li>
+                        <li data-i18n="exp.li5">Automação de pedidos, faturamento e logística</li>
+                        <li data-i18n="exp.li6">Integração bancária (boletos, PIX, DDA)</li>
+                    </ul>
+                </div>
+
+                <div class="case-block">
+                    <h4 data-i18n="exp.h4">🏗 Arquitetura</h4>
+                    <ul>
+                        <li data-i18n="exp.li7">Processamento assíncrono com threads</li>
+                        <li data-i18n="exp.li8">APIs REST + Web Services</li>
+                        <li data-i18n="exp.li9">PostgreSQL em operações transacionais</li>
+                    </ul>
+                </div>
+
+                <div class="case-block">
+                    <h4 data-i18n="exp.h5">📈 Impacto</h4>
+                    <ul>
+                        <li data-i18n="exp.li10">Automação de fluxos críticos do ERP</li>
+                        <li data-i18n="exp.li11">Redução de tarefas manuais</li>
+                        <li data-i18n="exp.li12">Maior consistência entre sistemas</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <button class="btn-mostrar-projetos">Mostrar Mais</button>
+    <section class="projetos" id="projetos">
+        <h2 class="titulo" data-i18n="proj.title">Projetos</h2>
+
+        <p class="projetos-intro" data-i18n="proj.intro">
+            Integrações de sistemas ERP com foco em automação de processos críticos entre e-commerce e instituições financeiras.
+        </p>
+
+        <div class="projects-grid">
+
+            <!-- CARD Mercado Livre -->
+            <div class="project-card">
+
+                <div class="project-header">
+                    <h3 data-i18n="proj.h1">Integração com Mercado Livre</h3>
+                    <span class="project-subtitle" data-i18n="proj.span1">
+                        Automação de pipeline de vendas (pedido → faturamento → logística → fiscal)
+                    </span>
+                </div>
+
+                <p class="project-description" data-i18n="proj.p2">
+                    Sistema de integração entre ERP e Mercado Livre responsável por automatizar todo o ciclo de vendas.
+                </p>
+
+                <!-- TAGS -->
+                <div class="tags">
+                    <span class="tag">Delphi</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Threads</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">ERP</span>
+                </div>
+
+            </div>
+
+            <!-- CARD Bancos -->
+            <div class="project-card">
+
+                <div class="project-header">
+                    <h3 data-i18n="proj.h2">Integrações Bancárias</h3>
+                    <span class="project-subtitle" data-i18n="proj.span2">
+                        Automação de operações financeiras no ERP
+                    </span>
+                </div>
+
+                <p class="project-description" data-i18n="proj.p3">
+                    Integração entre ERP e instituições financeiras para automação de boletos, PIX e conciliação.
+                </p>
+
+                <!-- TAGS -->
+                <div class="tags">
+                    <span class="tag">Delphi</span>
+                    <span class="tag" data-i18n="proj.apiBanc">APIs Bancárias</span>
+                    <span class="tag">PIX</span>
+                    <span class="tag">DDA</span>
+                    <span class="tag" data-i18n="proj.Financ">Financeiro</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tecnologias" id="tecnologias">
+        <h2 class="titulo" data-i18n="tech.title">Tecnologias</h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-card">
+                <h3>Backend</h3>
+                <div class="tags">
+                    <span class="tag">Delphi</span>
+                    <span class="tag">Object Pascal</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <h3 data-i18n="tech.h1">Banco de Dados</h3>
+                <div class="tags">
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag" data-i18n="tech.model">Modelagem</span>
+                    <span class="tag" data-i18n="tech.query">Queries Complexas</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <h3 data-i18n="tech.h2">Integrações</h3>
+                <div class="tags">
+                    <span class="tag">REST API</span>
+                    <span class="tag">Web Services</span>
+                    <span class="tag" data-i18n="tech.ML">Mercado Livre API</span>
+                    <span class="tag" data-i18n="tech.apiBanc">APIs Bancárias</span>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <h3 data-i18n="tech.h3">Engenharia de Software</h3>
+                <div class="tags">
+                    <span class="tag">ERP Systems</span>
+                    <span class="tag" data-i18n="tech.regraNe">Regras de Negócio</span>
+                    <span class="tag" data-i18n="tech.Perf">Performance</span>
+                    <span class="tag" data-i18n="tech.system">Sistemas Críticos</span>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section class="certificados" id="certificados">
-        <h2 class="titulo">Meus Certificados</h2>
+        <h2 class="titulo" data-i18n="cert.title">Meus Certificados</h2>
 
         <div class="container-certificados">
 
             <div class="certificado ativo">
                 <a href="./src/certificados/OS_15299_0018.pdf" target="_blank">
-                    <img src="./src/certificados/OS_15299_0018_page-0001.jpg"> 
+                    <img src="./src/certificados/OS_15299_0018_page-0001.jpg" alt="Certificado UEM Ciência da Computação"> 
 
                     <div class="informacoes-certificado">
-                        <h3>Certificado de Conclusão do Curso de Bacharelado em Ciência da Computação - Universidade Estadual de Maringá</h3>
-                        <p>🔗 Ver em PDF</p>
+                        <h3 data-i18n="cert.h1">Certificado de Conclusão do Curso de Bacharelado em Ciência da Computação - Universidade Estadual de Maringá</h3>
+                        <p data-i18n="cert.p1">🔗 Ver em PDF</p>
                     </div>
 
                 </a>
@@ -144,51 +293,53 @@
 
             <div class="certificado ativo">
                 <a href="./src/certificados/CERTIFICADO-MACRO JOSE V REGGIANI GALBARDI.pdf" target="_blank">
-                    <img src="./src/certificados/0_0_1.jpg"> 
+                    <img src="./src/certificados/0_0_1.jpg" alt="Certificado MACRO Inglês"> 
 
                     <div class="informacoes-certificado">
-                        <h3>Certificado de Conclusão do Curso de Inglês Avançado - MACRO Idiomas</h3>
-                        <p>🔗 Ver em PDF</p>
+                        <h3 data-i18n="cert.h2">Certificado de Conclusão do Curso de Inglês Avançado - MACRO Idiomas</h3>
+                        <p data-i18n="cert.p1">🔗 Ver em PDF</p>
                     </div>
                 </a>
             </div>
 
             <div class="certificado ativo">
-                <a href="./src/certificados/José Vitor Reggiani Galbardi.pdf" target="_blank">
-                    <img src="./src/certificados/José Vitor Reggiani Galbardi_page-0001.jpg">
+                <a href="./src/certificados/IPETNYA0.pdf" target="_blank">
+                    <img src="./src/certificados/IPETNYA0_page-0001.jpg" alt="Certificado DIO Git e GitHub"> 
 
                     <div class="informacoes-certificado">
-                        <h3>Certificado de Participação da Imersão Front-End - Alura</h3>
-                        <p>🔗 Ver em PDF</p>
+                        <h3 data-i18n="cert.h3">Certificado de Conclusão do curso Versionamento de Código com Git e GitHub - DIO</h3>
+                        <p data-i18n="cert.p1">🔗 Ver em PDF</p>
                     </div>
                 </a>
             </div>
 
             <div class="certificado">
-                <a href="./src/certificados/IPETNYA0.pdf" target="_blank">
-                    <img src="./src/certificados/IPETNYA0_page-0001.jpg"> 
+                <a href="./src/certificados/José Vitor Reggiani Galbardi.pdf" target="_blank">
+                    <img src="./src/certificados/José Vitor Reggiani Galbardi_page-0001.jpg" alt="Certificado Aura Front-End">
 
                     <div class="informacoes-certificado">
-                        <h3>Certificado de Conclusão do curso Versionamento de Código com Git e GitHub - DIO</h3>
-                        <p>🔗 Ver em PDF</p>
+                        <h3 data-i18n="cert.h4">Certificado de Participação da Imersão Front-End - Alura</h3>
+                        <p data-i18n="cert.p1">🔗 Ver em PDF</p>
                     </div>
                 </a>
             </div>
 
             <div class="certificado">
                 <a href="./src/certificados/IVKFTA68.pdf" target="_blank">
-                    <img src="./src/certificados/IVKFTA68-1.png"> 
+                    <img src="./src/certificados/IVKFTA68-1.png" alt="Certificado DIO Criação de Jogos"> 
 
                     <div class="informacoes-certificado">
-                        <h3>Certificado de Conclusão do curso Santander 2024-Criando Jogos com Godot - DIO</h3>
-                        <p>🔗 Ver em PDF</p>
+                        <h3 data-i18n="cert.h5">Certificado de Conclusão do curso Santander 2024-Criando Jogos com Godot - DIO</h3>
+                        <p data-i18n="cert.p1">🔗 Ver em PDF</p>
                     </div>
                 </a>
             </div>
 
         </div>
 
-        <button class="btn-mostrar-certificados">Mostrar Mais</button>
+        <button class="btn btn-secondary btn-mostrar-certificados" data-i18n="cert.mais">
+            Mostrar Mais
+        </button>
     </section>
     
     <script src="./src/js/index.js"></script>
